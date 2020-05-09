@@ -15,7 +15,7 @@
    font-family: 'Quicksand', sans-serif; 
 }
 .main__background {
-    /* width: 70vw; */
+    width: 90vw;
     margin: 0 0 0 auto;
     height: 100vh;
     background-image: url(../images/blog-main-background-square.jpg);
@@ -30,7 +30,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    /* background-color: rgba(30,40,48,0.7); */
     background-image: linear-gradient(to right, rgba(30,40,48,1)10%,rgba(30,40,48,0.9)35%, rgba(30,40,48,0.5)85%, rgba(70, 122, 165, 0) 100%);
 }
 
