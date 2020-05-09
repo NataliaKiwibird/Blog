@@ -35,3 +35,48 @@
  .nav__list-link:hover {
     border-bottom: 1px solid white;
 }
+.nav__hamburger-menu{
+    display: none;
+}
+@media (max-width: 1025px) {
+    .nav__header {
+        font-size: 16px;
+    }
+    .nav__list-item {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 769px) {
+    .nav {
+        height: 40px;
+        background-color: #222830;
+    }
+    .nav__list {
+        display: none;
+     }
+     .nav__header {
+         width: 65vw;
+         font-size: 16px;
+         padding-left: unset;
+     }
+     .nav__hamburger-menu {
+         display: unset;
+         height: 22px;
+         width: 10vw;
+     }
+}
+@media (max-width: 500px) {
+
+    .nav__header {
+        width: 90vw;
+        font-size: 11.5px;
+        padding-left: 5px;
+    }
+    .nav__hamburger-menu {
+        height: 16px;
+        width: 10vw;
+
+    }
+}

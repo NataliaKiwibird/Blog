@@ -15,7 +15,7 @@
    font-family: 'Quicksand', sans-serif; 
 }
 .main__background {
-    width: 70vw;
+    /* width: 70vw; */
     margin: 0 0 0 auto;
     height: 100vh;
     background-image: url(../images/blog-main-background-square.jpg);
@@ -56,4 +56,45 @@
     position: absolute;
     top: 490px;
     left: 6vw;
+}
+@media (max-width: 1025px) {
+    .main__header {
+        font-size: 75px;
+        top: 100px;
+    }
+    .main__title {
+        font-size: 24px;
+        /* top: 330px; */
+        top: 40vh;
+    }
+    .main__description {
+        top: 47vh;
+
+    }
+}
+@media (max-width: 769px) {
+    .main__header {
+        font-size: 80px;
+    }
+}
+@media (max-width: 500px) {
+    .main__background {
+        width: 100vw;
+    }
+    .main__header {
+        font-size: 70px;
+        width: 90vw;
+        left: 5vw;
+        top: 5vh;
+    }
+    .main__title {
+        font-size: 18px;
+        top: 53vh;
+    }
+    .main__description {
+        font-size: 14px;
+        width: 90vw;
+        top: 58vh;
+        left: 6vw;
+    }
 }
