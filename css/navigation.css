@@ -54,8 +54,27 @@
         background-color: #222830;
     }
     .nav__list {
-        display: none;
-     }
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        background-color: #222830;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .nav__list-item {
+        font-size: 25px;
+        padding: 20px 12px;
+    }
+    .nav__list--open {
+        opacity: 1;
+        pointer-events: unset;
+    }
      .nav__header {
          width: 65vw;
          font-size: 16px;
@@ -79,8 +98,8 @@
 
     }
 }
-@media (max-width: 361px) {
+@media (max-width: 461px) {
     .nav__header {
         font-size: 11.5px;
-}
+    }   
 }
