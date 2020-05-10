@@ -7,10 +7,6 @@
     font-family: 'Open Sans', sans-serif;
     position: relative;
 }
-.articles__header {
-   text-align: center;
-   font-family: 'Quicksand', sans-serif; 
-}
 .articles__background {
     width: 90vw;
     margin: 0 0 0 auto;
@@ -32,6 +28,7 @@
 .articles__header {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+    text-align: center;
     font-size: 100px;
     margin: 12vh 0 8vh 0;
 }
