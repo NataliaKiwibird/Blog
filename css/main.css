@@ -80,6 +80,9 @@
     .main__background {
         width: 100vw;
     }
+    .main__background::after {
+        background-color: rgba(30,40,48,0.4);
+    }
     .main__header {
         font-size: 70px;
         width: 90vw;
