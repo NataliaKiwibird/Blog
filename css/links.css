@@ -38,6 +38,7 @@
 }
 .links__main-list {
     width: 100%;
+    margin: 0 auto;
     text-transform: uppercase;
     padding: 0;
 }
@@ -71,5 +72,9 @@
     }
     .links__header {
         padding-top: 5vh;
+    }
+    .links__list {
+        width: 80vw;
+        margin: 0 auto;
     }
 }
