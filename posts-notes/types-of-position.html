@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neverending code</title>
+        <meta name="description" content="A blog for self-taught programmers, about how to learn to code">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+
+        <!-- Fontawesome and Google fonts: -->
+        <script src="https://kit.fontawesome.com/ecd70ad1d7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Quicksand', sans-serif;
+            font-family: 'Open Sans', sans-serif; -->
+
+        <!-- CSS links: -->
+        <link href="css/types-of-position.css" rel="stylesheet" type="text/css">
+
+    </head>
+    
+    <body>
+        <div class="container">
+
+            <article class="box static">
+                <h2 class="title static__title">static</h2>
+                <div class="text static__text">
+                    <p class="static__p">Keeps an element in <b>normal document flow of the webpage.</b></p>
+                    <div class="text-inner static__text-inner">
+                        <p class="static__p one"><strong>position: static;</strong></p>
+                    </div>
+                    <p class="static__p">Useful when your document flow is modified by other elements.</p>
+                </div>
+            </article>
+
+            <article class="box sticky">
+                <h2 class="title sticky__title">sticky</h2>
+                <div class="text sticky__text">
+                    <p class="sticky__p"><b>A mixture of static and fixed. </b>Element is static at beginning and <b>becoming fixed while scrolling.</b></p>
+                    <div class="text-inner sticky__text-inner">
+                        <p class="sticky__p one"><strong>position: sticky;<br>
+                        top: 0;
+                        </strong></p>
+                    </div>
+                    <p class="sticky__p">You need to specify at least one of top/ right/ bottom/ left.</p>
+                </div>
+            </article>
+
+            <article class="box fixed">
+                <h2 class="title fixed__title">fixed</h2>
+                <div class="text fixed__text">
+                    <p class="fixed__p">It positions a certain element<b> relative to its viewport.</b> Often used for navigation bars and social media icons.</p>
+                    <div class="text-inner fixed__text-inner">
+                        <p class="fixed__p one"><strong>position: fixed;<br>
+                        top: 0;<br>
+                        left: 0;</strong></p>
+                        <p class="fixed__p two"><i class="fas fa-long-arrow-alt-left"></i>
+
+                            element positioned in the upper left corner.</p>
+                    </div>
+                    <p class="fixed__p">Specify top/ right/ bottom/ left for positioning element.</p>
+                </div>
+            </article>
+
+            <article class="box relative">
+                <h2 class="title relative__title">relative</h2>
+                <div class="text relative__text">
+                    <p class="relative__p">It shifts an element around relative <b> its original position.</b></p>
+                    <div class="text-inner relative__text-inner">
+                        <p class="relative__p one"><strong>position: relative;<br>
+                        left: 20px;<br>
+                        bottom: 20px;</strong></p>
+                        <p class="relative__p two"><i class="fas fa-long-arrow-alt-left"></i>
+
+                            moves an element away by 20px left and down to its original position</p>
+                    </div>
+                    <p class="relative__p">You need to specify top/ right/ bottom/ left for positioning the element.</p>
+                </div>
+            </article>
+                        
+            <article class="box absolute">
+                <h2 class="title absolute__title">absolute</h2>
+                <div class="text absolute__text">
+                    <p class="absolute__p">It positions an element absolutely relative <b>to its closest parent</b> (usuallu it's a &#60;div&#61; containing the element).</p>
+                    <div class="text-inner absolute__text-inner">
+                        <p class="absolute__p one"><strong>position: absolute;<br>
+                        left: 20px;<br>
+                        bottom: 20px;</strong></p>
+                        <p class="absolute__p two"><i class="fas fa-long-arrow-alt-left"></i>
+
+                            moves away by 20px from left and bottom of a parent element</p>
+                    </div>
+                    <p class="absolute__p">Specify top/ right/ bottom/ left. The parent needs to get position: relative!</p>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- <p class="z-index">While positioning remember about z-index property! It brings elements forwards and backwards.</p> -->
+
+    </body>
+</html>

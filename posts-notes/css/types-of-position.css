@@ -1,0 +1,127 @@
+body {
+    background-color: #222830;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10vh;
+}
+/* BOXES */
+.box {
+    font-size: 50px; 
+    width: 30vw;
+    position: relative;
+}
+.relative {
+    top: -25vh;
+    left: 5vw;
+    background-color: indianred;
+}
+.absolute {
+    top: -60vh;
+    left: 36.5vw;
+    background-color: ivory;
+}
+.static {
+    top: 20vh;
+    left: 5vw;
+    background-color: #7FB069;
+}
+.sticky {
+    top: -13vh;
+    left: 34vw;
+    background-color: #ffc857;
+}
+.fixed {
+    top: -46.5vh;
+    left: 63vw;
+    background-color: #fe7f2d;
+}
+/* TITLES */
+.title {
+    margin: 0;
+    position: absolute;
+    top: -72px;
+}
+.relative__title {
+    color: indianred;
+}
+.absolute__title {
+    color: ivory;
+}
+.static__title {
+    color: #7FB069;
+}
+.sticky__title {
+    color: #ffc857;
+}
+.fixed__title {
+    color: #fe7f2d;
+}
+/* TEXT */
+.text {
+    color: #222830;
+    font-size: 16px;
+    padding: 4vh;
+    text-align: justify;
+}
+.text-inner {
+    display: flex;
+}
+.one {
+    width: 100%;
+    margin-right: 3vh;
+}
+/* .z-index {
+    color: white;
+    font-weight: lighter;
+    line-height: 1.5;
+    margin: 0 5vw;
+} */
+
+@media (max-width: 1025px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5;
+    }
+    .box {
+        position: unset;
+        width: 50vw;
+        margin: 5vh 20vw;
+    }
+    .title {
+        position: static;
+        color: #222830;
+        padding: 1vw 4vh;
+    }
+
+}
+@media (max-width: 769px) {
+    .box {
+        width: 70vw;
+    }
+}
+@media (max-width: 450px) {
+    .box {
+        width: 90vw;
+        margin: 4vh auto;
+    }
+    .title {
+        font-size: 60px;
+    }
+    .text-inner {
+        font-size: 12px;
+    }
+    .one {
+        margin-right: 1vh;
+    }
+}
