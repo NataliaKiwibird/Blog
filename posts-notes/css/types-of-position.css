@@ -9,9 +9,9 @@ body {
 h1 {
     font-size: 120px;
     padding: 10px;
-    color: #222830;
+    color: gold;
     font-weight: lighter;
-    background-color: #ffc857;
+    /* background-color: #ffc857; */
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -115,17 +115,24 @@ h1 {
 
 }
 @media (max-width: 769px) {
+    h1 {
+        font-size: 90px;
+        margin: 5vw;
+    }
     .box {
         width: 70vw;
     }
 }
 @media (max-width: 450px) {
+    h1 {
+        font-size: 60px;
+    }
     .box {
         width: 90vw;
         margin: 4vh auto;
     }
     .title {
-        font-size: 60px;
+        font-size: 70px;
     }
     .text-inner {
         font-size: 12px;
