@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neverending code</title>
+        <meta name="description" content="A blog for self-taught programmers, about how to learn to code">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+
+        <!-- Fontawesome and Google fonts: -->
+        <script src="https://kit.fontawesome.com/ecd70ad1d7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Quicksand', sans-serif;
+            font-family: 'Open Sans', sans-serif; -->
+
+        <!-- CSS links: -->
+        <link href="css/flexbox.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+
+        <header><h1>CSS flexbox</h1>
+        <p class="p-header">Flexbox (aka Flexible Boxes) creates page layouts for dynamic User Interface. It is a layout mode that arranges elements in predictable way for different sizes and browsers. Essential for responsive web design.</p></header>
+
+        <article class="flexbox__container">
+
+            <h2>FLEXBOX I. Properties for flex container = parent of flex items</h2>
+            <div class="elements__container parent-elements__container">
+                
+                <div class="elements__container-item parent-elements__container-item">
+                    <h3>display</h3>
+                    <p>display: flex;</p>
+                    <p>Must-have of flexbox. Added to a parent element, allows children to be next to each other. Added to a child sets the child in a row.</p>
+                </div>
+
+                <div class="elements__container-item parent-elements__container-item">
+                    <h3>flex-direction</h3>
+                    <p>flex-direction: row; (default)<br>
+                        flex-direction: column;<br>
+                        flex-direction: row-reverse;<br>
+                        flex-direction: column-reverse;
+                    </p>
+                    <p>Determines the direction of items.</p>
+                </div>
+
+                <div class="elements__container-item parent-elements__container-item">
+                    <h3>justify-content</h3>
+                    <p>justify-content: center;<br>
+                        justify-content: flex-start;<br>
+                        justify-content: flex-end;<br>
+                        justify-content: space-between;<br>
+                        justify-content: space-around;<br>
+                        justify-content: space-evenly;
+                    </p>
+                    <p>Sets items on the main axis. Main and cross axis come from flex-direction property. For rows the main axis is <i class="fas fa-arrows-alt-h"></i> and the cross axis is <i class="fas fa-arrows-alt-v"></i>. Inverse for columns.
+                    </p>
+                </div>
+
+                <div class="elements__container-item parent-elements__container-item">
+                    <h3>align-items</h3>
+                    <p>align-items: flex-start;<br>
+                        align-items: flex-end;<br>
+                        align-items: center;<br>
+                        align-items: stretch;<br>
+                        align-items: baseline;
+                    </p>
+                    <p>Sets items on the cross axis, so <i class="fas fa-arrows-alt-v"></i> for rows and <i class="fas fa-arrows-alt-h"></i> for columns.</p>
+                </div>
+
+                <div class="elements__container-item parent-elements__container-item">
+                    <h3>flex-wrap</h3>
+                    <p>flex-wrap: nowrap; (default)<br>
+                        flex-wrap: wrap;<br>
+                        flex-wrap: wrap-reverse;
+                    </p>
+                    <p>Moves items to extra row or column (if they are too wide together).</p>
+                
+                </div>
+
+            </div>
+
+            <h2>FLEXBOX II. Properties for child elements</h2>
+            <div class="elements__container child-elements__container">
+                <div class="elements__container-item child-elements__container-item">
+                    <h3>flex-shrink</h3>
+                    <p>flex-shrink: 1;<br>
+                        flex-shrink: 2;<br>
+                        flex-shrink: 3;
+                        etc.
+                    </p>
+                    <p>Allows item to shrink if width of parent is smaller then combined width of all the flex items within it. The higher value the more item shrinks.</p>
+                </div>
+
+                <div class="elements__container-item child-elements__container-item">
+                    <h3>flex-grow</h3>
+                    <p>flex-grow: 1;<br>
+                        flex-grow: 2;<br>
+                        flex-grow: 3;
+                        etc.
+                    </p>
+                    <p>The opposite of flex-shrink. Expands items into available space.</p>
+                </div>
+
+                <div class="elements__container-item child-elements__container-item">
+                    <h3>flex-basis</h3>
+                    <p>flex-basis: Xpx;<br>
+                        flex-basis: Xem;<br>
+                        flex-basis: X%;
+                        etc.
+                    </p>
+                    <p>Specifies the initial size of item.</p>
+                </div>
+
+                <div class="elements__container-item child-elements__container-item">
+                    <h3>flex</h3>
+                    <p>flex: 1 0 100px;<br>
+                        flex: auto;<br>
+                        flex: none;<br>
+                        etc.<br>
+                        flex: grow shrink basis;
+                    </p>
+                    <p>Shortcut available to set several flex properties at once.
+                    </p>
+                </div>
+
+                <div class="elements__container-item child-elements__container-item">
+                    <h3>order</h3>
+                    <p>order: 1;<br>
+                        order: 2;<br>
+                        order: 3;<br>
+                        order: -1;<br>
+                        etc.
+                    </p>
+                    <p>Sets items in a new order, breaks default order.</p>
+                </div>
+
+                <div class="elements__container-item child-elements__container-item">
+                    <h3>align-self</h3>
+                    <p>align-self: flex-start;<br>
+                        align-self: flex-end;<br>
+                        align-self: center;<br>
+                        align-self: baseline;<br>
+                        align-self: stretch;<br>
+                    </p>
+                    <p>Allows to adjust items individually.</p>
+                </div>
+
+            </div>
+
+        </article>
+
+    </body>
+</html>
