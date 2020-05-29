@@ -53,6 +53,10 @@
     text-align: center;
     line-height: 2;
 }
+.notes__link {
+    color: #222830;
+    text-decoration: none;
+}
 .notes__button {
     margin-top: 30px;
     padding: 20px 30px;
