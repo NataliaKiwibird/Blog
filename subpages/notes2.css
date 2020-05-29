@@ -84,7 +84,7 @@ body {
 }
 
 /* footer */
-
+/* 
 .footer {
     width: 100%;
     height: 100%;
@@ -118,7 +118,7 @@ padding-top: 2vh;
 }
 .footer__list-link:hover {
     border-bottom: 1px solid #222830;
-}
+} */
 
 @media (max-width: 1020px) {
     .h1 {
@@ -126,7 +126,7 @@ padding-top: 2vh;
     }
 }
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
     .notes-background {
         width: 100%;
         height: 35vh;
@@ -139,4 +139,4 @@ padding-top: 2vh;
         width: 30vw;
         font-size: 14px;
     }
-}
+} */
