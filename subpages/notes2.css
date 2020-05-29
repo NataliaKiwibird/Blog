@@ -57,6 +57,31 @@ body {
     background-image: linear-gradient(to bottom, rgba(30,40,48,1)10%,rgba(30,40,48,0.9)45%, rgba(30,40,48,0.7)85%, rgba(70, 122, 165, 0) 100%);
 }
 
+/* Lista postów */
+
+.notes__icons {
+    width: 98vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notes__icons-item {
+    width: 20vw;
+}
+.notes__icons-button {
+    font-size: 20px;
+    background-color: gold;
+    padding: 30px 40px;
+    border: none;
+}
+.notes__icons-button:hover {
+    background-color: snow;
+}
+.notes__icons-link {
+    text-decoration: none;
+    color: #222830;
+}
 
 /* footer */
 
