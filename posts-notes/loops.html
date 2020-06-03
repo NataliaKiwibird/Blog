@@ -50,48 +50,97 @@
                 </p>
             </div>
 
-            <h2>Types of loops:</h2>
+            <h2>Types of loops</h2><br>
 
-            <section class="loops">
+
+            <h4>for, while, do... while</h4><br>
+
+            <article class="loops">
                 <div class="loops__item">
                     <h3>for</h3>
                     <p class="loops__item-para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit et placeat labore blanditiis, saepe itaque alias illo optio, at excepturi numquam totam! Odio iure fugit hic ratione, id debitis.
+                        To define <em>for, while</em> and <em>do...while</em> loop three elements are needed:<br>
+                        <span class="one">initial expression</span><br>
+                        <span class="two">condition</span><br>
+                        <span class="three">increment/decrement expression</span>.<br>
+                        <em>For loop</em> runs a code until the condition returns false.<br><br>
+                        for (<span class="one">let i = 0;</span> <span class="two">i &#60 5;</span> <span class="three">i++</span>) { <br>
+                            console.log(i); <br>
+                        };
                     </p>
                 </div>
                 <div class="loops__item">
                     <h3>while</h3>
                     <p class="loops__item-para">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident dolor excepturi ducimus tempora fugit velit, doloribus accusantium sed unde atque saepe facilis veniam necessitatibus ea quibusdam asperiores! Distinctio, non? Voluptate!
+                        While loop works exactly the same like a for loop, the only difference is a syntax:<br><br>
+                        <span class="one">let i = 0;</span><br>
+                        while (<span class="two">i &#60 5</span>) {
+                            console.log(i); <br>
+                            <span class="three">i++</span><br>
+                        };
                     </p>
                 </div>
                 <div class="loops__item">
                     <h3>do... while</h3>
                     <p class="loops__item-para">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sapiente numquam dignissimos hic minima quo asperiores quos, officiis ut voluptatum accusantium fugiat maxime blanditiis nostrum delectus quibusdam! Tempore, unde beatae.
+                        An extension of <em>while loop</em>. Useful when you want to loop something that is not likely to be true, but you still want to run it at least once.<br><br>
+                        <span class="one">let i = 0;</span><br>
+                        do { <br>
+                            console.log(i); <br>
+                            <span class="three">i++</span><br>
+                        } while (<span class="two">i &#60 5</span>);
+                    </p>
+                </div>
+
+            </article>
+
+                <h4>for of & for in</h4><br>
+     
+            <article class="loops">
+
+                <div class="loops__item">
+                    <h3>for of</h3>
+                    <p class="loops__item-para">
+                        The <em>for of</em> statement creates a loop iterating over arrays or other iterable objects. The loop is used mostly for objects.<br><br>
+                        const <span class="four">numbers</span> = [1, 2, 3, 4, 5];<br><br>
+                        for (let <span class="five">number</span> of <span class="four">numbers</span>) { <br>
+                            console.log(<span class="five">number</span>**2)<br>
+                        };
+
                     </p>
                 </div>
                 <div class="loops__item">
                     <h3>for in</h3>
                     <p class="loops__item-para">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quo error assumenda totam! Enim omnis impedit excepturi rerum neque doloribus similique corrupti, libero vitae tempora officia, odit, unde accusamus repellendus.
+                        Used for objects.<br><br>
+                        let <span class="four">objects</span> = {<br>
+                            'car': 'Audi',<br>
+                            'color': 'red'<br>
+                        };<br><br>
+                        for (let <span class="five">object</span> in <span class="four">objects</span>) {<br>
+                            consol.log(<span class="five">object</span>)<br>
+                          };<br>
                     </p>
                 </div>
-                <div class="loops__item">
-                    <h3>for of</h3>
-                    <p class="loops__item-para">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quo error assumenda totam! Enim omnis impedit excepturi rerum neque doloribus similique corrupti, libero vitae tempora officia, odit, unde accusamus repellendus.
-                    </p>
-                </div>
+
+            </article>
+
+                <h4>forEach</h4><br>
+        
+            <article class="loops">
+
                 <div class="loops__item">
                     <h3>forEach</h3>
                     <p class="loops__item-para">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quo error assumenda totam! Enim omnis impedit excepturi rerum neque doloribus similique corrupti, libero vitae tempora officia, odit, unde accusamus repellendus.
+                        It's a method which iterates over an array. <em>forEach</em> runs a function once per every element of array. It uses a function or callback in parenthesis. <br><br>
+                        let people = ['Harry', 'Ron', 'Hermione'];<br><br>
+                        people.forEach(person => {<br>
+                            consol.log(person);<br>
+                        });
                     </p>
                 </div>
 
-
-            </section>
+            </article>
 
 
 

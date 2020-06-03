@@ -34,10 +34,37 @@ h3 {
     color: gold;
     text-shadow: 1px 1px 1px #222830;
 }
+h4 {
+    color: gold;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+}
+.h4__description {
+    color: gold;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
 .loops__item-para {
 
 }
 
+.one {
+    background-color: rgb(233, 190, 83);
+}
+.two {
+    background-color: khaki;
+}
+.three {
+    background-color: rgb(204, 206, 91);
+}
+.four {
+    background-color: rgb(209, 211, 99);
+}
+.five {
+    background-color: rgb(216, 194, 85);
+}
 @media (max-width: 1025px) {
     .loops__item {
         width: 35vw;
@@ -45,13 +72,15 @@ h3 {
     }
 }
 @media (max-width: 769px) {
+    .loops {
+        margin: auto;
+    }
     .loops__item {
         width: 55vw;
-        padding: 25px;
     }
     .example {
-        width: 65vw;
-        font-size: 15px;
+        width: 75vw;
+        padding: 25px;
     }
     h3 {
         font-size: 42px;
