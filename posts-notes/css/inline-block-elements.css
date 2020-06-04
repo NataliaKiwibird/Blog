@@ -1,0 +1,24 @@
+.elements__container {
+    width: 90vw;
+    margin: 100px auto 150px auto;
+    display: flex;
+    justify-content: center;
+}
+.elements {
+    width: 30vw;
+    color: #222830;
+    margin: 30px;
+    padding: 30px;
+}
+.one {
+    background-color: #f1ab86;
+}
+.two {
+    background-color: rgb(108, 175, 57);
+}
+span {
+    border: 1px solid #222830;
+}
+.view {
+    border: 1px solid #222830;
+}
