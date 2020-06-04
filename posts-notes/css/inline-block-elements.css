@@ -22,3 +22,13 @@ span {
 .view {
     border: 1px solid #222830;
 }
+@media (max-width: 750px) {
+    .elements__container {
+    flex-wrap: wrap;
+    margin: 50px auto 90px auto;
+    }
+    .elements {
+        width: 85vw;
+        margin: 30px auto;
+    }
+}
