@@ -28,6 +28,10 @@
     padding-bottom: 15vh;
     column-count: 3;
     column-gap: 2vw;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 0;
 }
 .links__title h6 {
     font-family: 'Quicksand', sans-serif;
@@ -36,12 +40,12 @@
     font-weight: 400;
     margin-bottom: 0;
 }
-.links__main-list {
+/* .links__main-list {
     width: 100%;
     margin: 0 auto;
     text-transform: uppercase;
     padding: 0;
-}
+} */
 .links__list {
     list-style: none;
 }

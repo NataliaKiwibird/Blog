@@ -66,12 +66,16 @@
             <div class="about__item">
                 <span class="about__item-icon"><i class="fas fa-bell fa-3x"></i></span>
                 <h5 class="about__item-title">Doświadczenie</h5>
-                <p class="about__item-text">Lepiej uczyć się na cudzych błędach, niż na własnych, dlatego śmiało opowiem Wam o tym, co zrobiłam źle. Wykształcenie nauczycielskie zaszczepiło we mnie misję dzielenia się praktycznym doświadczeniem, bo wiedza teoretyczna to za mało, żeby odnieść sukces. Jeśli chcesz pominąć kilka błędów w nauce kodowania, zapraszam do zakładki Artykuły.</p>
+                <p class="about__item-text">
+                    Lepiej uczyć się na cudzych błędach, niż na własnych, dlatego śmiało opowiem Wam o tym, co zrobiłam źle. Wykształcenie nauczycielskie zaszczepiło we mnie misję dzielenia się praktycznym doświadczeniem, bo wiedza teoretyczna to za mało, żeby odnieść sukces. Jeśli chcesz pominąć kilka błędów w nauce kodowania, zapraszam do zakładki Artykuły.
+                </p>
             </div>
             <div class="about__item">
                 <span class="about__item-icon"><i class="fas fa-lightbulb fa-3x"></i></span>
                 <h5 class="about__item-title">Inspiracja</h5>
-                <p class="about__item-text">Jak łączyć naukę kodowania z innymi obowiązkami? Jak dbać o zdrowie i dobre samopoczucie, siedząc godzinami przed komputerem? Jak spędzać wolny czas, żeby wspierało to proces nauki? Czyli co robić, żeby nam się chciało i wychodziło. Po odpowiedź na te pytania i dawkę inspiracji zapraszam na mojego Instagrama. Warto też skorzystać z sekcji Linki.</p>
+                <p class="about__item-text">
+                    Jak łączyć naukę kodowania z innymi obowiązkami? Jak dbać o zdrowie i dobre samopoczucie, siedząc godzinami przed komputerem? Jak spędzać wolny czas, żeby wspierało to proces nauki? Czyli co robić, żeby nam się chciało i wychodziło. Po odpowiedź na te pytania i dawkę inspiracji zapraszam na mojego Instagrama. Warto też skorzystać z sekcji Linki.
+                </p>
             </div>
         </section>
 
@@ -84,7 +88,7 @@
                 <p class="notes__description">
                     Uwielbiam robić notatki, zwłaszcza takie przejrzyste i z logicznym układem wizualnym, dzięki czemu mózg lepiej przyswaja i zapamiętuje informacje. Notatki wizualne to mój sposób nauki, którego nie widziałam nigdzie indziej w Internecie. Jeśli chcesz spróbować czegoś innego, niż suchy tekst i filmiki, chętnie podzielę się z Tobą moimi kolorowymi, graficznymi Notatkami.
                 </p>
-                <button class="notes__button"><a class="notes__link" href="subpages/notes.html" target="_blank">Przejdź do notatek</a></button>
+                <a class="notes__link" href="subpages/notes.html" target="_blank"><button class="notes__button">Przejdź do notatek</button></a>
             </div>  
     </section>
 
@@ -94,9 +98,9 @@
                 <h3 class="articles__header">Artykuły</h3>
                 <p class="articles__title">Skorzystaj z mojego doświadczenia</p>
                 <p class="articles__description">
-                    Kolegów z branży nigdy za wiele. Zwłaszcza, jeżeli dopiero stawiamy pierwsze kroki. Chętnie stanę się Twoją kodową kumpelą! Usiądź wygodnie z kawą lub herbatą i pogadajmy o kodowaniu. Przedstawię Ci moje rady, opinie i doświadczenia oraz chętnie dowiem się, co Ty masz na to wszystko do powiedzenia.
+                    Kolegów z branży nigdy za wiele, zwłaszcza jeżeli stawiamy w niej pierwsze kroki. Dlatego chętnie stanę się Twoją kodową kumpelą. Usiądź wygodnie z kawą lub herbatą i pogadajmy o kodowaniu. Przedstawię Ci moje rady, opinie i doświadczenia oraz chętnie dowiem się, co Ty masz na to wszystko do powiedzenia.
                 </p>
-                <button class="notes__button"><a class="articles__link" href="subpages/articles.html" target="_blank">Przejdź do wpisów</a></button>
+                <a class="articles__link" href="subpages/articles.html" target="_blank"><button class="notes__button">Przejdź do wpisów</button></a>
             </div>  
     </section>
 
@@ -105,8 +109,8 @@
         <p class="links__subhead">
             Poznaj najlepsze źródła nauki front-endu
         </p>
-        <div class="links__container">
-            <ul class="links__main-list">
+        <article class="links__container">
+            <!-- <ul class="links__main-list"> -->
                 <ul class="links__list">
                     <li class="links__title"><h6>Darmowe kursy w języku angielskim</h6></li>
                     <li class="links__item"><a href="https://www.thenetninja.co.uk/" class="links__link" target="_blank">
@@ -193,8 +197,8 @@
                         code wars (js)</a></li>
                 </ul>
                 
-            </ul>
-    </div>
+            <!-- </ul> -->
+        </article>
     </section>
 
     <section class="contact" id="contact">
@@ -207,7 +211,7 @@
                 <p class="contact__txt"><a href="mailto:natalia.kiwibird@gmail.com" target="blank" class="contact__link">natalia.kiwibird@gmail.com</a></p>
             </div>
             <div class="contact__item">
-                <i class="fab fa-twitter fa-2x"  class="contact__image" alt="twitter-icon"></i>
+                <i class="fab fa-twitter fa-2x contact__image"></i>
                 <p class="contact__txt"><a href="https://twitter.com/NKiwibird" target="blank" class="contact__link">Twitter</a></p>
             </div>
             <div class="contact__item">
@@ -225,11 +229,12 @@
             <li class="footer__list-item"><a href="#links" class="footer__list-link">Linki</a></li>
         </ul>
         <p class="footer__info">
-            &#169 Neverending Code. Created and written by Natalia Bubiak.
+            &#169; Neverending Code. Created and written by Natalia Bubiak.
         </p>
     </footer>
 
-<script src="main.js"></script>
+<script src="hamburger.js"></script>
+<script src="language-switch.js"></script>
     </body>
 
 </html>
