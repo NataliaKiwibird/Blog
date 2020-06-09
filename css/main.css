@@ -61,6 +61,7 @@
     position: absolute;
     bottom: 20px;
     right: 30px;
+    cursor: pointer;
 }
 .polish {
     display: none;
