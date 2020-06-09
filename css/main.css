@@ -56,6 +56,15 @@
     top: 62vh;
     left: 6vw;
 }
+.main__language {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.polish {
+    display: none;
+}
 @media (max-width: 1025px) {
     .main__header {
         font-size: 75px;
