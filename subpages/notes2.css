@@ -67,12 +67,10 @@ body {
     align-items: center;
 }
 .notes__icons-item {
-    width: 20vw;
-}
-.notes__icons-button {
-    font-size: 20px;
+    width: 200px;
+    height: 75px;
+    margin: 2.5vw;
     background-color: gold;
-    padding: 30px 40px;
     border: none;
 }
 .notes__icons-button:hover {
@@ -82,9 +80,16 @@ body {
     text-decoration: none;
     color: #222830;
 }
-
+.notes__icons-title{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
 @media (max-width: 1020px) {
     .h1 {
         font-size: 80px;
     }
+}
+.hide{
+    display:none;
 }
