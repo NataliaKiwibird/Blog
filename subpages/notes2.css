@@ -65,6 +65,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .notes__icons-item {
     width: 200px;
@@ -88,6 +89,14 @@ body {
 @media (max-width: 1020px) {
     .h1 {
         font-size: 80px;
+    }
+}
+@media (max-width: 1020px) {
+    .notes__icons {
+        margin: 30px;
+    }
+    .notes__icons-item{
+        margin-bottom: 3.5vh;
     }
 }
 .hide{
