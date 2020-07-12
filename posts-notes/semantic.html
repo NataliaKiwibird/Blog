@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neverending code</title>
+        <meta name="description" content="A blog for self-taught programmers, about how to learn to code">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+
+        <!-- Fontawesome and Google fonts: -->
+        <script src="https://kit.fontawesome.com/ecd70ad1d7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Quicksand', sans-serif;
+            font-family: 'Open Sans', sans-serif; -->
+
+        <!-- CSS links: -->
+        <link href="css/semantic.css" rel="stylesheet" type="text/css">
+        <link href="css/body-and-header.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body>
+
+        <header><h1>Semantic HTML</h1>
+        <p class="p-header">Semantic tags are introduced from HTML5. They describe the meaning of particular elements of a webpage. 
+            They help us to build a clear structure of our website. Semantic tags give accessibility and readability for users, creators and search engine optimization. 
+            Semantic tags do not stiffly specify what content they should include. Sometimes the use of a particular tag depends on the author of the code.</p></header>
+
+        <main class="semantic__container">
+
+            <h2>SEMANTIC HTML I. Headers</h2>
+            <article class="elements__container parent-elements__container">
+                
+                <section class="elements__container-item parent-elements__container-item">
+                    <h3>&#60header&#62</h3>
+                    <p>&#60header&#62&#60/header&#62</p>
+                    <p>Header of the webpage or an article. You can nest other elements inside this tag, such as subtitle, date or navigation.</p>
+                </section>
+
+                <section class="elements__container-item parent-elements__container-item">
+                    <h3>&#60nav&#62</h3>
+                    <p>&#60nav&#62&#60/nav&#62</p>
+                    <p>Navigation of the webpage. You can nest list and other elements inside.</p>
+                </section>
+
+                <section class="elements__container-item parent-elements__container-item">
+                    <h3>&#60h1&#62 - &#60h6&#62</h3>
+                    <p>&#60h1&#62&#60/h1&#62<br>
+                        &#60h2&#62&#60/h2&#62<br>
+                        &#60h3&#62&#60/h3&#62<br>
+                        &#60h4&#62&#60/h4&#62<br>
+                        &#60h5&#62&#60/h5&#62<br>
+                        &#60h6&#62&#60/h6&#62<br>
+                    </p>
+                    <p>Headers with different levels of importance (h1 - the main one, h6 - little ones). They create a hierarchy of content on the page. they create a kind of table of content of the webpage.
+                    </p>
+                </section>
+
+            </article>
+
+            <h2>SEMANTIC HTML II. Main content</h2>
+            <article class="elements__container child-elements__container">
+                <section class="elements__container-item child-elements__container-item">
+                    <h3>&#60main&#62</h3>
+                    <p>&#60main&#62&#60/main&#62</p>
+                    <p>The main content of a webpage. There should be only one &#60main&#62 tag on the page - it's usually a container between a header/navigation and a footer.</p>
+                </section>
+
+                <section class="elements__container-item child-elements__container-item">
+                    <h3>&#60section&#62</h3>
+                    <p>&#60section&#62&#60/section&#62</p>
+                    <p>A part of the site for a specific purpose. Designates an area of a page with a consistent content.</p>
+                </section>
+
+                <section class="elements__container-item child-elements__container-item">
+                    <h3>&#60article&#62</h3>
+                    <p>&#60article&#62&#60/article&#62</p>
+                    <p>A complete, independent, and consistent part of the page, such as an article.</p>
+                </section>
+
+                <section class="elements__container-item child-elements__container-item">
+                    <h3>&#60aside&#62</h3>
+                    <p>&#60aside&#62&#60/aside&#62</p>
+                    <p>Sidebar or call-out box with a content indirectly related to the website's main content.</p>
+                </section>
+
+                <section class="elements__container-item child-elements__container-item">
+                    <h3>&#60footer&#62</h3>
+                    <p>&#60footer&#62&#60/footer&#62</p>
+                    <p>A footer usually contains info about the author, copyright data or links.</p>
+                </section>
+
+            </article>
+
+            <h2>SEMANTIC HTML III. Other</h2>
+            <article class="elements__container other-elements__container">
+                <section class="elements__container-item other-elements__container-item">
+                    <h3>&#60time&#62</h3>
+                    <p>&#60time datetime="2020-06-24"&#62&#60/time&#62</p>
+                    <p>Typically nested in &#60time&#62 tag, provides a date (or date and time) of an article. It gets a [datetime] attribute with date in ISO-8601 format.</p>
+                </section>
+
+                <section class="elements__container-item other-elements__container-item">
+                    <h3>&#60figure&#62</h3>
+                    <p>&#60figure&#62<br>
+                        &#60img src="" alt=""&#62<br>
+                        &#60figcaption&#62A very cool image.&#60/figcaption&#62
+                        &#60/figure&#62</p>
+                    <p>A tag for img, video or audio content. Can also contain a description.</p>
+                </section>
+
+                <section class="elements__container-item other-elements__container-item">
+                    <h3>&#60figcaption&#62</h3>
+                    <p>&#60figcaption&#62&#60/figcaption&#62</p>
+                    <p>An accurate description of the provided object.</p>
+                </section>
+
+                <section class="elements__container-item other-elements__container-item">
+                    <h3>&#60address&#62</h3>
+                    <p>&#60address&#62&#60/address&#62</p>
+                    <p>Provides a contact info: mailing address, phone numbers etc. Typically included in a &#60footer&#62 tag.</p>
+                </section>
+
+            </article>
+
+        </main>
+
+
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">O blogu</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Notatki wizualne</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Artykuły</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Linki</a></li>
+            </ul>
+            <p class="footer__info">
+                &#169 Neverending Code. Created and written by Natalia Bubiak.
+            </p>
+        </footer>
+
+    </body>
+</html>

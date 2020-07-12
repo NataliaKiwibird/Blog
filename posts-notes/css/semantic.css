@@ -1,0 +1,100 @@
+.semantic__container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+}
+.elements__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 96vw;
+    margin: 0 auto;
+}
+.elements__container-item {
+    width: 24vw;
+    margin: 1vw 3vw;
+    /* background-color: skyblue; */
+    position: relative;
+    margin-bottom: 75px;
+}
+h3 {
+    position: absolute;
+    top: -106px;
+    font-size: 50px;
+    /* color: skyblue; */
+    text-shadow: 1px 1px 1px #222830;
+}
+p {
+    padding: 15px 25px;
+}
+.parent-elements__container-item {
+    background-color: ivory;
+}
+.parent-elements__container-item:nth-child(odd) {
+    background-color: rgb(129, 179, 201);
+}
+.parent-elements__container-item h3  {
+    color: ivory;
+}
+.parent-elements__container-item:nth-child(odd) h3 {
+    color: rgb(115, 167, 190);
+}
+.child-elements__container-item {
+    background-color: rgb(108, 175, 57);
+}
+.child-elements__container-item:nth-child(odd) {
+    background-color: ivory;
+}
+.child-elements__container-item h3  {
+    color: rgb(108, 175, 57);
+}
+.child-elements__container-item:nth-child(odd) h3 {
+    color: ivory;
+}
+.other-elements__container-item {
+    background-color: #f79627;
+}
+.other-elements__container-item:nth-child(odd) {
+    background-color: ivory;
+}
+.other-elements__container-item h3  {
+    color: #f79627;
+}
+.other-elements__container-item:nth-child(odd) h3 {
+    color: ivory;
+}
+@media (max-width: 1367px) {
+    h3 {
+        font-size: 42px;
+        top: -90px;
+    }
+}
+@media (max-width: 1025px) {
+    .elements__container-item {
+        width: 35vw;
+    }
+    h2 {
+        margin-bottom: 15vh;
+    }
+}
+@media (max-width: 769px) {
+    .elements__container-item {
+        width: 40vw;
+    }
+    h3 {
+        font-size: 38px;
+        top: -81px;
+    }
+}
+@media (max-width: 750px) {
+    h1 {
+        font-size: 80px;
+    }
+    .p-header {
+        width: 80vw;
+    }
+    .elements__container-item {
+        width: 82vw;
+    }
+}
