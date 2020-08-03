@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neverending code</title>
+        <meta name="description" content="A blog for self-taught programmers, about how to learn to code">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+
+        <!-- Fontawesome and Google fonts: -->
+        <script src="https://kit.fontawesome.com/ecd70ad1d7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Quicksand', sans-serif;
+            font-family: 'Open Sans', sans-serif; -->
+
+        <!-- CSS links: -->
+        <link href="css/methods-map-reduce-filter.css" rel="stylesheet" type="text/css">
+        <link href="css/body-and-header.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body>
+        <header><h1>JS Array methods:<br>.map(), .reduce(), .filter()</h1>
+            <p class="p-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis ullam labore vitae quibusdam in totam consectetur, minima voluptas tempore hic laboriosam deserunt. Architecto deleniti recusandae illo impedit optio cumque!</p></header>
+    
+            <main class="methods__container">
+    
+                <article class="elements__container">
+                    
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>.map()</h3>
+                        <p>.map() method iterates over an array and calling a function on every element of the array. It creates a new array from the return of the passed function. You can use it instead of .forEach method.</p>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>Example 1</h3>
+                        <img src="images/methods-map-reduce-filter/array-of-users.png">
+                        <p>We have an array containing some objects - each one represents a person. We need to draw out only the age of our people.</p>
+                        <figure>
+                            <img src="images/methods-map-reduce-filter/map-example1.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>Example 2</h3>
+                        <p>Now we want to convert all names from our array to upper case:</p>
+                        <figure>
+                            <img src="images/methods-map-reduce-filter/map-example2.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+
+                </article>
+
+                <article class="elements__container">
+    
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>.reduce()</h3>
+                        <p>.reduce() method is a way to find a single value or object from an array. It runs a function through every element of an array and passes the result of the function from one array's element to another. The result of the function being passed among the elements is called the accumulator.
+                            In other words, .reduce() method reduces our array to one desired value.</p>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>Example 1</h3>
+                        <img src="images/methods-map-reduce-filter/array-of-users.png">
+                        <p>We have the same array containing objects. We need to pick the oldest person in the array:</p>
+                        <figure>
+                            <img src="images/methods-map-reduce-filter/reduce-example1.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>Example 2</h3>
+                        <p>Now we want to calculate a sum of age of all users:</p>
+                        <figure>
+                            <img src="images/methods-map-reduce-filter/reduce-example2.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+
+                </article>
+
+                <article class="elements__container">
+    
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>.filter()</h3>
+                        <p>.filter() method filters a selected array and returns a new, filtered array. The method is passed with a function that tests the selected array and returns values that passed the test provided within the function.</p>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>Example 1</h3>
+                        <img src="images/methods-map-reduce-filter/array-of-users.png">
+                        <p>We have an array containing some objects - each one represents a person. We need to draw out only the age of our people.</p>
+                        <figure>
+                            <img src="images/methods-map-reduce-filter/filter-example1.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>Example 2</h3>
+                        <p>Now we want to convert all names from our array to upper case:</p>
+                        <figure>
+                            <img src="images/methods-map-reduce-filter/filter-example2.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+    
+                </article>
+    
+    
+            </main>
+    
+    
+            <footer class="footer">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">About</a></li>
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Visual notes</a></li>
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Articles</a></li>
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Links</a></li>
+                </ul>
+                <p class="footer__info">
+                    &#169 Neverending Code. Created and written by Natalia Bubiak.
+                </p>
+            </footer>
+
+    </body>
+
+</html>
