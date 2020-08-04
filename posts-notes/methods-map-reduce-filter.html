@@ -37,8 +37,7 @@
 
                     <section class="elements__container-item parent-elements__container-item">
                         <h3>example 1</h3>
-                        <img src="images/methods-map-reduce-filter/array-of-users.png">
-                        <p>We have an array containing some objects - each one represents a person. We need to draw out only the age of our people.</p>
+                        <figure><img src="images/methods-map-reduce-filter/array-of-users.png"></figure>                        <p>We have an array containing some objects - each one represents a person. We need to draw out only the age of our people.</p>
                         <figure>
                             <img src="images/methods-map-reduce-filter/map-example1.png" alt="" class="overflowed-pic">
                         </figure>
@@ -54,7 +53,27 @@
 
                     <section class="elements__container-item parent-elements__container-item">
                         <h3>syntax</h3>
-                        <p></p>
+                        <p>
+                            <b>array.map(function (currentValue</b>, index, arr) <b>{<br>
+                            // return a selected element<br>
+                            }</b>, thisValue <b>)</b><br><br>
+                    
+                            <b>bold - required element</b><br>
+                            normal - optional element<br><br>
+
+                            <u>Description of elements:</u><br><br>
+                            
+                            <b>array</b> - a name of the original array that is iterated over<br><br>
+                            
+                            <b>currentValue</b> - required value of a current element<br><br>
+                            
+                            index - index of current element being iterated<br><br>
+                            
+                            arr - an array object on which the method was called<br><br>
+
+                            thisValue - an optional context of callback function
+
+                        </p>
                     </section>
 
 
@@ -70,8 +89,7 @@
 
                     <section class="elements__container-item parent-elements__container-item">
                         <h3>example 1</h3>
-                        <img src="images/methods-map-reduce-filter/array-of-users.png">
-                        <p>We have the same array containing objects. We need to pick the oldest person in the array:</p>
+                        <figure><img src="images/methods-map-reduce-filter/array-of-users.png"></figure>                        <p>We have the same array containing objects. We need to pick the oldest person in the array:</p>
                         <figure>
                             <img src="images/methods-map-reduce-filter/reduce-example1.png" alt="" class="overflowed-pic">
                         </figure>
@@ -87,7 +105,31 @@
 
                     <section class="elements__container-item parent-elements__container-item">
                         <h3>syntax</h3>
-                        <p></p>
+                        <div class="reduce-syntax">
+                        <p>
+                            <b>array.reduce(callback(accumulator, currentValue</b>, index, arr]<b>){<br>
+                            // return an element of new array<br>
+                            }</b>, initialValue<b>);</b><br><br>
+                            
+                            <b>bold - required element</b><br>
+                            normal - optional element<br><br>
+
+                            <u>Description of elements:</u><br><br>
+                                
+                            <b>array</b> - a name of the original array that is iterated over<br><br>
+
+                            <b>accumulator</b> - a value passed from the previous run of the function<br><br>
+                            
+                            <b>currentValue</b> - a value of a currently running element<br><br>
+                            
+                            index - index of current element being iterated<br><br>
+                            
+                            arr - an array object on which the method was called<br><br>
+
+                            initialValue - a value for the first run of callback function
+
+                        </p>
+                    </div>
                     </section>
 
                 </article>
@@ -101,7 +143,7 @@
 
                     <section class="elements__container-item parent-elements__container-item">
                         <h3>example 1</h3>
-                        <img src="images/methods-map-reduce-filter/array-of-users.png">
+                        <figure><img src="images/methods-map-reduce-filter/array-of-users.png"></figure>
                         <p>We have an array containing some objects - each one represents a person. We need to filter all adult people:</p>
                         <figure>
                             <img src="images/methods-map-reduce-filter/filter-example1.png" alt="" class="overflowed-pic">
@@ -118,7 +160,26 @@
 
                     <section class="elements__container-item parent-elements__container-item">
                         <h3>syntax</h3>
-                        <p></p>
+                        <p>
+                            <b>array.filter(function(element</b>, index, arr)<b>{<br>
+                                // return an element of new array<br>
+                                }</b>, thisValue<b>);</b><br><br>
+    
+                                <b>bold - required element</b><br>
+                                normal - optional element<br><br>
+    
+                                <u>Description of elements:</u><br><br>
+                            
+                                <b>array</b> - a name of the original array that is iterated over<br><br>
+                                
+                                <b>element</b> - an element to run a function<br><br>
+                                
+                                index - index of current element being iterated<br><br>
+                                
+                                arr - an array object on which the method was called<br><br>
+    
+                                thisValue - an optional context of callback function
+                        </p>
                     </section>
 
                 </article>
