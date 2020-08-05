@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neverending code</title>
+        <meta name="description" content="A blog for self-taught programmers, about how to learn to code">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+
+        <!-- Fontawesome and Google fonts: -->
+        <script src="https://kit.fontawesome.com/ecd70ad1d7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Quicksand', sans-serif;
+            font-family: 'Open Sans', sans-serif; -->
+
+        <!-- CSS links: -->
+        <link href="css/methods-map-reduce-filter.css" rel="stylesheet" type="text/css">
+        <link href="css/body-and-header.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body>
+        <header><h1>JS methods:<br>.slice(), .splice(), .split()</h1>
+            <p class="p-header">Some of javascript methods have very similar names, that can be really confusing... Despite this, it's worth to understand and remember them, because it makes our programming much easier and it's often subject to interview questions. Here are three similar-sounding and useful methods:</p></header>
+    
+            <main class="methods__container">
+    
+                <article class="elements__container">
+                    
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>.slice()</h3>
+                        <p>.slice() method <b>extracts</b> values from an array and <b>copies them</b> to a new array. It <b>doesn't change the original array</b>. This method can also be used for strings.</p>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>example</h3>
+                        <p>We have an array with days of week and we want to get weekend days only. We can do it in multiple ways:</p>
+                        <figure>
+                            <img src="images/methods-slice-splice-split/slice-example.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>syntax</h3>
+                        <p>
+                            <b>array.slice(</b>start, finish<b>);</b><br><br>
+                    
+                            <b>bold - required element</b><br>
+                            normal - optional element<br><br>
+
+                            <u>Description of elements:</u><br><br>
+                            
+                            <b>array</b> - an array that we want to extract values from<br><br>
+                                                        
+                            start - an index (0 notation) which we start extracting from<br><br>
+                            
+                            finish - an index (0 notation) where we finish the extracting (non-including)
+
+                        </p>
+                    </section>
+
+
+                </article>
+
+                <article class="elements__container">
+    
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>.splice()</h3>
+                        <p>.splice() method <b>extracts</b> values from an array and <b>moves them</b> to a new array. The <b>extracted values are removed</b> from the original array! The method can also add elements to the original array.</p>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>example</h3>
+                        <p>We have an array with a training plan. We want to extract trainings that we've done:</p>
+                        <figure>
+                            <img src="images/methods-slice-splice-split/splice-example.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>syntax</h3>
+                        <div class="reduce-syntax">
+                        <p>
+                            <b>array.splice(start, numbToDelete</b>, item1, item2, ...itemN<b>);</b><br><br>
+                            
+                            <b>bold - required element</b><br>
+                            normal - optional element<br><br>
+
+                            <u>Description of elements:</u><br><br>
+                                
+                            <b>array</b> - an array that we want to extract values from<br><br>
+
+                            <b>start</b> - an index (0 notation) which we start extracting from<br><br>
+                            
+                            <b>numbToDelete</b> - number of items we want to delete. If it's 0, nothing will be deleted.<br><br>
+                            
+                            item1 - itemN - items added to the original array.
+                            
+                        </p>
+                    </div>
+                    </section>
+
+                </article>
+
+                <article class="elements__container">
+    
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>.split()</h3>
+                        <p>.split() method <b>splits (= divides) a string into multiple strings</b> gathered in a new array that is returned. We provide a pattern to divide the string that is placed as a first parameter in the method's call. It's the opposition to .join() array method.</p>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>example</h3>
+                        <p>We have a confession. We can split this sentence in multiple ways:</p>
+                        <figure>
+                            <img src="images/methods-slice-splice-split/split-example.png" alt="" class="overflowed-pic">
+                        </figure>
+                    </section>
+
+                    <section class="elements__container-item parent-elements__container-item">
+                        <h3>syntax</h3>
+                        <p>
+                            <b>str.split(</b>separator, limit<b>);</b><br><br>
+    
+                                <b>bold - required element</b><br>
+                                normal - optional element<br><br>
+    
+                                <u>Description of elements:</u><br><br>
+                            
+                                <b>str</b> - the string that we want to split<br><br>
+                                
+                                separator - The pattern describing where each split should occur. It can be a character or a regular expression.
+                                The empty string in parentheses does that each character will be split up.<br><br>
+                                
+                                limit - an integer limiting the number of pieces.
+                            </p>
+                    </section>
+
+                </article>
+    
+    
+            </main>
+    
+    
+            <footer class="footer">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">About</a></li>
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Visual notes</a></li>
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Articles</a></li>
+                    <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Links</a></li>
+                </ul>
+                <p class="footer__info">
+                    &#169 Neverending Code. Created and written by Natalia Bubiak.
+                </p>
+            </footer>
+
+    </body>
+
+</html>
