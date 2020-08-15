@@ -1,6 +1,6 @@
 .elements__container {
     width: 90vw;
-    margin: 100px auto 150px auto;
+    margin: 3vh auto;
     display: flex;
     justify-content: center;
 }

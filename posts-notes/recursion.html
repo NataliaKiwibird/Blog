@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neverending code</title>
+        <meta name="description" content="A blog for self-taught programmers, about how to learn to code">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+
+        <!-- Fontawesome and Google fonts: -->
+        <script src="https://kit.fontawesome.com/ecd70ad1d7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Quicksand', sans-serif;
+            font-family: 'Open Sans', sans-serif; -->
+
+        <!-- CSS links: -->
+        <link href="css/recursion.css" rel="stylesheet" type="text/css">
+        <link href="css/body-and-header.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body>
+
+        <header><h1 elements__header>Recursion</h1>
+            <p class="p-header">
+                Recursion in Javascript is a function that calls itself. It's used to solve problems by breking them into smaller problems. There's a story called Martin and the Dragon that illustrates this process (story available <a href="https://webdocs.cs.ualberta.ca/~ree/c101-b2/dragonstory0.pdf" target="_blank"></a>here</a>).
+                Recursive functions occur in many places, such as JSON, DOM traversal algorithms, object traversal and complex data structures. It takes a problem and does its parts over and over again (by recursive call) until it hits a set endpoint (known as a base case).
+            </p></header>
+
+            <article class="elements__container">
+
+                <div class="elements one">
+                    <h3>Base case</h3>
+        
+                    <p>A piece of code that sets the point where the function should finish. without a base case, the function runs forever and causes computer freezing.</p>
+        
+
+        
+                </div>
+
+                <div class="elements two">
+                    <h3>Recursive call</h3>
+        
+                    <p>A piece of code that determines what the function does and how works.</p>
+        
+                </div>
+
+            </article>
+
+            <article class="elements__container">
+
+                <div class="elements one">
+                    <h3>Stack overflow error</h3>
+        
+                    <p>It's a runtime error occurring if a base case is not set or set unproperly. It's caused when the call stack's size exceeds the amount of memory reserved for it.</p>
+        
+
+        
+                </div>
+
+                <div class="elements two">
+                    <h3>Call stack</h3>
+        
+                    <p>A built-in data structure that stores information and manages functions and their calls. It can be compared to a stack of papers - it works in a similar way: When a function is called, it's placed on the top of the stack. When a program process the return keyword or when the function ends the function call is removed from the top of the stack.</p>
+        
+                </div>
+
+            </article>
+
+            <h2>Comparison of recursion and iteration:</h2>
+        
+
+
+
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">About</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Visual notes</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Articles</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Links</a></li>
+            </ul>
+            <p class="footer__info">
+                &#169 Neverending Code. Created and written by Natalia Bubiak.
+            </p>
+        </footer>
+
+    </body>
+</html>
