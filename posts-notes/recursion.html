@@ -14,6 +14,9 @@
         <!-- font-family: 'Quicksand', sans-serif;
             font-family: 'Open Sans', sans-serif; -->
 
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
         <!-- CSS links: -->
         <link href="css/recursion.css" rel="stylesheet" type="text/css">
         <link href="css/body-and-header.css" rel="stylesheet" type="text/css">
@@ -26,13 +29,13 @@
 
         <header><h1 elements__header>Recursion</h1>
             <p class="p-header">
-                Recursion in Javascript is a function that calls itself. It's used to solve problems by breking them into smaller problems. There's a story called Martin and the Dragon that illustrates this process (story available <a href="https://webdocs.cs.ualberta.ca/~ree/c101-b2/dragonstory0.pdf" target="_blank"></a>here</a>).
+                Recursion in Javascript is a function that calls itself. It's used to solve problems by breking them into smaller problems. There's a story called Martin and the Dragon that illustrates this process (story available <a href="https://webdocs.cs.ualberta.ca/~ree/c101-b2/dragonstory0.pdf" target="_blank">here</a>).
                 Recursive functions occur in many places, such as JSON, DOM traversal algorithms, object traversal and complex data structures. It takes a problem and does its parts over and over again (by recursive call) until it hits a set endpoint (known as a base case).
             </p></header>
 
             <article class="elements__container">
 
-                <div class="elements one">
+                <div class="elements two">
                     <h3>Base case</h3>
         
                     <p>A piece of code that sets the point where the function should finish. without a base case, the function runs forever and causes computer freezing.</p>
@@ -47,17 +50,15 @@
                     <p>A piece of code that determines what the function does and how works.</p>
         
                 </div>
+                
+                </article>
 
-            </article>
+                <article class="elements__container">
 
-            <article class="elements__container">
-
-                <div class="elements one">
+                <div class="elements two">
                     <h3>Stack overflow error</h3>
         
                     <p>It's a runtime error occurring if a base case is not set or set unproperly. It's caused when the call stack's size exceeds the amount of memory reserved for it.</p>
-        
-
         
                 </div>
 
@@ -71,9 +72,56 @@
             </article>
 
             <h2>Comparison of recursion and iteration:</h2>
+
+            <article class="elements__container">
+
+                <div class="elements">
+                    <h3>Iterated snippet</h3>
         
+                    <div class="image"><figure><img src="images/recursion/snippet-iterated.png" class="overflowed-pic"></figure></div>
+        
+                </div>
+
+                <div class="elements">
+                    <h3>Recursion snippet</h3>
+        
+                    <div class="image"><figure><img src="images/recursion/snippet-recursive.png" class="overflowed-pic"></figure></div>
+        
+                </div>
+
+            </article>
 
 
+            <table>
+                <tbody>
+                    <tr class="">
+                        <td class="bg-warning p-2 text-center border-right border-dark">Iteration</td>
+                        <td class="bg-warning p-2 text-center border-right border-dark">Recursion</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bg-light p-2 text-center border-right border-dark">Works by using loops and some methods (map, forEach etc)</td>
+                        <td class="bg-light p-2 text-center border-right border-dark">Works by calling function itself, until some condition is met</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bg-warning p-3 text-center border-right border-dark">Uses a control variable (initialized and incremented or decremented), and a conditional control statement</td>
+                        <td class="bg-warning p-2 text-center border-right border-dark">Uses a base case and recursive call</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-light p-2 text-center border-right border-dark">A control variable stores a value, which is updated, monitored and compared with the conditional statement</td>
+                        <td class="bg-light p-2 text-center border-right border-dark">The call stack memory is used to store the state of the function. Every browser has a limit on the call stack size</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bg-warning p-3 text-center border-right border-dark">Works slower in functions with fewer amount of operations, but it can bare a huge amount of operations and infite loops</td>
+                        <td class="bg-warning p-2 text-center border-right border-dark">Works faster in functions with fewer amount of operations. Although, when the call stack limit is exccede, it causes en error</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+    
 
         <footer class="footer">
             <ul class="footer__list">

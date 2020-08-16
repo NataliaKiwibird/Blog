@@ -10,6 +10,10 @@
     margin: 30px;
     padding: 30px;
 }
+.snippet{
+    width: 40vw;
+    margin: auto;
+}
 .one {
     background-color: ivory;
 }
@@ -22,13 +26,53 @@ span {
 .view {
     border: 1px solid #222830;
 }
-@media (max-width: 750px) {
+a{
+    color: ivory;
+    text-decoration: none;
+}
+figure {
+    margin: auto;
+    overflow: auto !important;
+}
+img{
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+.overflowed-pic {
+    size: inherit;
+    margin: 0 !important;
+}
+table{
+    margin: auto 25vw;
+}
+@media (max-width: 1370px){
+    table{
+        margin: auto 12.5vw;
+    }
+}
+@media (max-width: 780px) {
     .elements__container {
+    width: 98vw;
     flex-wrap: wrap;
-    margin: 50px auto 90px auto;
+    margin: 5vh auto 10.5vh auto;
     }
     .elements {
-        width: 85vw;
-        margin: 30px auto;
+        width: 35vw;
+        margin: 0 3vw;
+    }
+    .image {
+        width: auto;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 500px){
+    table{
+        margin: 5vh 0;
+    }
+    .elements {
+        width: 95vw;
+        margin: 1vh 3vw;
     }
 }
