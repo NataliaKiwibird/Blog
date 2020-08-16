@@ -10,10 +10,6 @@
     margin: 30px;
     padding: 30px;
 }
-.snippet{
-    width: 40vw;
-    margin: auto;
-}
 .one {
     background-color: ivory;
 }
@@ -30,9 +26,16 @@ a{
     color: ivory;
     text-decoration: none;
 }
+.snippets {
+    width: 90vw;
+    margin: 10vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 figure {
     margin: auto;
-    overflow: auto !important;
 }
 img{
     display: block;
@@ -44,11 +47,19 @@ img{
     margin: 0 !important;
 }
 table{
-    margin: auto 25vw;
+    margin: auto 25vw 7.5vh 25vw;
 }
 @media (max-width: 1370px){
     table{
-        margin: auto 12.5vw;
+        margin: auto 12.5vw 7.5vh 12.5vw;
+    }
+    .snippets{
+        width: 95vw;
+        margin: auto;
+    }
+    .snippet{
+        width: 35vw;
+        margin: 0 2vw 2.5vh 2vw;
     }
 }
 @media (max-width: 780px) {
@@ -57,13 +68,16 @@ table{
     flex-wrap: wrap;
     margin: 5vh auto 10.5vh auto;
     }
+    .snippet{
+        width: 60vw !important;
+        margin: 2vh !important;
+    }
     .elements {
         width: 35vw;
         margin: 0 3vw;
     }
     .image {
         width: auto;
-        overflow: auto;
     }
 }
 
@@ -74,5 +88,13 @@ table{
     .elements {
         width: 95vw;
         margin: 1vh 3vw;
+    }
+    .snippet{
+        width: 98vw !important;
+        margin: auto !important;
+    }
+    figure {
+        width: 90vw;
+        padding-right: 5vw;
     }
 }
