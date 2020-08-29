@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neverending code</title>
+        <meta name="description" content="A blog for self-taught programmers, about how to learn to code">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+
+        <!-- Fontawesome and Google fonts: -->
+        <script src="https://kit.fontawesome.com/ecd70ad1d7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Quicksand', sans-serif;
+            font-family: 'Open Sans', sans-serif; -->
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <!-- CSS links: -->
+        <link href="css/css-units.css" rel="stylesheet" type="text/css">
+        <link href="css/body-and-header.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body>
+
+        <header><h1>CSS Units</h1>
+        <p class="p-header">CSS uses many dimension units, which can be confusing for beginning developers. Luckily, we can group those units into parts and differ them within their groups. Below I present a simplified table of css units, but to be perfectly clear about css dimensions, we need to first understand the concept of box-sizing property:</p></header>
+
+        <main class="main__container">
+
+            <article class="elements__container">
+
+                <div class="elements two">
+                    <h3>box-sizing: <strong>content-box;</strong></h3>
+        
+                    <p>Default value.<br>
+                    The given dimension includes the width and height of the content only, it doesn't include margins, padding and borders.  Margins, paddings, and borders are extra added to the content.</p>
+        
+
+        
+                </div>
+
+                <div class="elements two">
+                    <h3>box-sizing: <strong>border-box;</strong></h3>
+        
+                    <p>Recommended value.<br>
+                        The given dimension includes the content with padding, margins, and borders. This value is easier to maintain on the webpage layout.</p>
+        
+                </div>
+
+                </article>
+
+            <h2>Table of CSS Units:</h2>
+            <section class="elements__container parent-elements__container">
+
+                <table>
+                    <tbody>
+                        <tr class="">
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">UNIT</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">TYPE</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">DESCRIPTION</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-light p-2 text-center border-right border-bottom border-dark">EM</td>
+                            <td class="bg-light p-2 text-center border-right border-bottom border-dark">relative to a font-size</td>
+                            <td class="bg-light p-2 text-center border-right border-bottom border-dark">Relative to a font-size of a parent element.<br>
+                                It can be used to set other properties than font-size (margin, padding etc.)</td>
+                        </tr>
+
+                        <tr>
+                            <td class="bg-light p-3 text-center border-right border-bottom border-dark">REM</td>
+                            <td class="bg-light p-2 text-center border-right border-bottom border-dark">relative to a font-size</td>
+                            <td class="bg-light p-2 text-center border-right border-bottom border-dark">Relative to a font-size of a root element.<br>
+                                It can be used to set other properties than font-size (margin, padding etc.)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bg-warning p-3 text-center border-right border-bottom border-dark">VH</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">relative to a viewport</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">Relative to the height of the viewport.</td>
+                        </tr>
+
+                        <tr class="">
+                            <td class="bg-warning p-3 text-center border-right border-bottom border-dark">VW</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">relative to a viewport</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">Relative to the width of the viewport.</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-warning p-3 text-center border-right border-bottom border-dark">VMIN</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">relative to a viewport</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">Relative to the shorter dimension of the viewport.<br>
+                            Vertical screen = VMIN relative to the viewport's width, Horizontal screen = VMIN relative to the height.
+                            </td>
+                        </tr>
+
+                        <tr class="">
+                            <td class="bg-warning p-3 text-center border-right border-bottom border-dark">VMAX</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">relative to a viewport</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">Relative to the longer dimension of the viewport.<br>
+                                Vertical screen = VMAX relative to the viewport's height, Horizontal screen = VMAX relative to the width.</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-light p-3 text-center border-right border-bottom border-dark">%</td>
+                            <td class="bg-light p-2 text-center border-right border-bottom border-dark">relative to a parent</td>
+                            <td class="bg-light p-2 text-center border-right border-bottom border-dark">Takes a percentage of the closest parent element size.</td>
+                        </tr>
+
+                        <tr class="">
+                            <td class="bg-warning p-3 text-center border-right border-bottom border-dark">PX</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">not relative to anything else</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">Absolute unit. Not recommended in responsive web design.<br>
+                            Recommended for print style sheets.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="bg-warning p-3 text-center border-right border-bottom border-dark">CM, MM, IN</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">not relative to anything else</td>
+                            <td class="bg-warning p-2 text-center border-right border-bottom border-dark">Absolute unit. Not recommended in responsive web design.<br>
+                                Recommended for print style sheets.</td>
+                        </tr>
+
+                            <tr class="">
+                                <td class="bg-light p-3 text-center border-right border-bottom border-dark">CALC()</td>
+                                <td class="bg-light p-2 text-center border-right border-bottom border-dark"></td>
+                                <td class="bg-light p-2 text-center border-right border-bottom border-dark">Connects different units into one length,<br>
+                                    e.g. width: calc( 10vw - 10px );</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-warning p-3 text-center border-right border-dark">0, line-height, opacity</td>
+                                <td class="bg-warning p-2 text-center border-right border-dark"></td>
+                                <td class="bg-warning p-2 text-center border-right border-dark">Some of css properties doesn't need a unit.</td>
+                            </tr>
+
+                    </tbody>
+                </table>
+
+
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">About the blog</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Visual notes</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Articles</a></li>
+                <li class="footer__list-item"><a href="../index.html" class="footer__list-link">Links</a></li>
+            </ul>
+            <p class="footer__info">
+                &#169 Neverending Code. Created and written by Natalia Bubiak.
+            </p>
+        </footer>
+
+    </body>
+</html>
